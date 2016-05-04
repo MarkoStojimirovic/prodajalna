@@ -208,11 +208,18 @@ streznik.post('/prijava', function(zahteva, odgovor) {
     	  Address, City, State, Country, PostalCode, \
     	  Phone, Fax, Email, SupportRepId) \
         VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
-      //TODO: add fields and finalize
-      //stmt.run("", "", "", "", "", "", "", "", "", "", "", 3); 
-      //stmt.finalize();
+      var values = Object.keys(polja).map(k => polja[k]);
+      values.push(3);
+      stmt.run.apply(stmt, values);
+      stmt.finalize();
+      
+      zahteva.session.message = 'Stranka je bila uspešno registrirana.';
+      odgovor.redirect('/prijava');
+      
     } catch (err) {
       napaka2 = true;
+      zahteva.session.message = 'Prišlo je do napake pri registraciji nove stranke. \
+                                 Prosim preverite vnešene podatke in poskusite znova.';
     }
   
     odgovor.end();
@@ -220,13 +227,17 @@ streznik.post('/prijava', function(zahteva, odgovor) {
 })
 
 // Prikaz strani za prijavo
-streznik.get('/prijava', function(zahteva, odgovor) {
-  vrniStranke(function(napaka1, stranke) {
-      vrniRacune(function(napaka2, racuni) {
-        odgovor.render('prijava', {sporocilo: "", seznamStrank: stranke, seznamRacunov: racuni});  
-      }) 
+streznik.get('/prijava', function (zahteva, odgovor) {
+    vrniStranke(function (napaka1, stranke) {
+        vrniRacune(function (napaka2, racuni) {
+            var sporocilo = zahteva.session.message;
+            sporocilo = sporocilo ? sporocilo : '';
+            delete zahteva.session.message;
+            console.log(sporocilo);
+            odgovor.render('prijava', { sporocilo: sporocilo, seznamStrank: stranke, seznamRacunov: racuni });
+        })
     });
-})
+});
 
 // Prikaz nakupovalne košarice za stranko
 streznik.post('/stranka', function(zahteva, odgovor) {
