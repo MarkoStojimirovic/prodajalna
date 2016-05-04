@@ -1,361 +1,358 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <% if (vizualiziraj) { %>
 <?xml-stylesheet type="text/xsl" href="../eSLOG/vizualizacija.xslt"?>
-<% } %>
-<IzdaniRacunEnostavni xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xds="http://uri.etsi.org/01903/v1.1.1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.gzs.si/e-poslovanje/sheme/eSLOG_1-6_EnostavniRacun.xsd">
-	<Racun Id="data">
-		<!-- verzija priročnika -->
-		<PoljubnoBesedilo>
-			<VrstaBesedila>AAI</VrstaBesedila>
-			<Besedilo>
-				<Tekst1>PRIROCNIK_ESLOG_1_6</Tekst1>
-			</Besedilo>
-		</PoljubnoBesedilo>
-		<!-- številka računa -->
-		<GlavaRacuna>
-			<VrstaRacuna>380</VrstaRacuna>
-			<StevilkaRacuna>RAC-12345-6789-XX</StevilkaRacuna>
-			<FunkcijaRacuna>9</FunkcijaRacuna>
-			<!-- 1 - Racuna ni potrebno placati. -->
-			<NacinPlacila>1</NacinPlacila>
-			<!-- Stroskovno mesto računa -->
-			<StroskovnoMesto>123456</StroskovnoMesto>
-			<!-- OTHR - drugo -->
-			<KodaNamena>OTHR</KodaNamena>
-		</GlavaRacuna>
-		<!-- naslov računa -->
-		<PoljubnoBesedilo>
-			<VrstaBesedila>AAI</VrstaBesedila>
-			<Besedilo>
-				<Tekst1>NASLOV_RACUNA</Tekst1>
-				<Tekst2>Račun za opravljene storitve april 2016</Tekst2>
-			</Besedilo>
-		</PoljubnoBesedilo>
-		<!-- datum izdaje računa -->
-		<DatumiRacuna>
-			<VrstaDatuma>137</VrstaDatuma>
-			<DatumRacuna>2016-04-13T00:00:00.0Z</DatumRacuna>
-		</DatumiRacuna>
-		<!-- valuta računa -->
-		<Valuta>
-			<VrstaValuteRacuna>2</VrstaValuteRacuna>
-			<KodaValute>EUR</KodaValute>
-		</Valuta>
-		<!-- kraj izdaje računa -->
-		<Lokacije>
-			<VrstaLokacije>91</VrstaLokacije>
-			<NazivLokacije>Ljubljana</NazivLokacije>
-		</Lokacije>
-		<!-- rok plačila -->
-		<PlacilniPogoji>
-			<PodatkiORokih>
-				<VrstaPogoja>3</VrstaPogoja>
-			</PodatkiORokih>
-			<PlacilniRoki>
-				<VrstaDatumaPlacilnegaRoka>13</VrstaDatumaPlacilnegaRoka>
-				<Datum>2016-04-18T00:00:00.0Z</Datum>
-			</PlacilniRoki>
-		</PlacilniPogoji>
-		<!-- tekst glava -->
-		<PoljubnoBesedilo>
-			<VrstaBesedila>AAI</VrstaBesedila>
-			<Besedilo>
-				<Tekst1>GLAVA_TEKST</Tekst1>
-				<Tekst2>Poljubno besedilo, v katerem se opiše karkoli je za izdajatelja ali na</Tekst2>
-				<Tekst3>ročnika, prejemnika pomembno.</Tekst3>
-			</Besedilo>
-		</PoljubnoBesedilo>
-		<!-- obdobje od -->
-		<DatumiRacuna>
-			<VrstaDatuma>263</VrstaDatuma>
-			<DatumRacuna>2016-01-01T00:00:00.0Z</DatumRacuna>
-		</DatumiRacuna>
-		<!-- obdobje do -->
-		<DatumiRacuna>
-			<VrstaDatuma>263</VrstaDatuma>
-			<DatumRacuna>2016-04-30T00:00:00.0Z</DatumRacuna>
-		</DatumiRacuna>
-		<!-- datum storitve -->
-		<DatumiRacuna>
-			<VrstaDatuma>35</VrstaDatuma>
-			<DatumRacuna>2016-04-13T00:00:00.0Z</DatumRacuna>
-		</DatumiRacuna>
-		<!-- opis obdobja -->
-		<PoljubnoBesedilo>
-			<VrstaBesedila>AAI</VrstaBesedila>
-			<Besedilo>
-				<Tekst1>OPIS_OBDOBJA</Tekst1>
-				<Tekst2>Prvo četrtletje</Tekst2>
-			</Besedilo>
-		</PoljubnoBesedilo>
-		<!-- Subjekti na postavki -->
-		<PoljubnoBesedilo>
-			<VrstaBesedila>ZZZ</VrstaBesedila>
-			<Besedilo>
-				<Tekst1>3357287</Tekst1>
-				<Tekst2>IME</Tekst2>
-				<Tekst3>BIROKOP D.O.O.</Tekst3>
-			</Besedilo>
-		</PoljubnoBesedilo>
-		<PoljubnoBesedilo>
-			<VrstaBesedila>ZZZ</VrstaBesedila>
-			<Besedilo>
-				<Tekst1>3357287</Tekst1>
-				<Tekst2>NASLOV</Tekst2>
-				<Tekst3>ULICA 15. MAJA 5</Tekst3>
-			</Besedilo>
-		</PoljubnoBesedilo>
-		<PoljubnoBesedilo>
-			<VrstaBesedila>ZZZ</VrstaBesedila>
-			<Besedilo>
-				<Tekst1>3357287</Tekst1>
-				<Tekst2>KRAJ</Tekst2>
-				<Tekst3>KOPER-CAPODISTRIA</Tekst3>
-				<Tekst4>6000</Tekst4>
-				<Tekst5>SLOVENIJA</Tekst5>
-			</Besedilo>
-		</PoljubnoBesedilo>
-		<!-- Namen pri sklicu-->
-		<PoljubnoBesedilo>
-			<VrstaBesedila>AAI</VrstaBesedila>
-			<Besedilo>
-				<Tekst1>REFERENCA_NAMEN</Tekst1>
-				<Tekst2>01</Tekst2>
-			</Besedilo>
-		</PoljubnoBesedilo>
-		<!-- izdajatelj -->
-		<PodatkiPodjetja>
-			<NazivNaslovPodjetja>
-				<VrstaPartnerja>II</VrstaPartnerja>
-				<NazivPartnerja>
-					<NazivPartnerja1>SETCCE</NazivPartnerja1>
-				</NazivPartnerja>
-				<Ulica>
-					<Ulica1>Tehnološki park 21</Ulica1>
-					<Ulica3>Objekt D, nadstropje 4</Ulica3>
-				</Ulica>
-				<Kraj>Ljubljana</Kraj>
-				<NazivDrzave>Slovenija</NazivDrzave>
-				<PostnaStevilka>1000</PostnaStevilka>
-				<KodaDrzave>SI</KodaDrzave>
-			</NazivNaslovPodjetja>
-			<FinancniPodatkiPodjetja>
-				<BancniRacun>
-					<StevilkaBancnegaRacuna>SI56051008013037180</StevilkaBancnegaRacuna>
-					<NazivBanke1>ABANKA</NazivBanke1>
-					<BIC>ABANSI2XXXX</BIC>
-				</BancniRacun>
-			</FinancniPodatkiPodjetja>
-			<ReferencniPodatkiPodjetja>
-				<VrstaPodatkaPodjetja>VA</VrstaPodatkaPodjetja>
-				<PodatekPodjetja>SI39705684</PodatekPodjetja>
-			</ReferencniPodatkiPodjetja>
-			<ReferencniPodatkiPodjetja>
-				<VrstaPodatkaPodjetja>GN</VrstaPodatkaPodjetja>
-				<PodatekPodjetja>1594389</PodatekPodjetja>
-			</ReferencniPodatkiPodjetja>
-			<KontaktiPodjetja>
-				<KontaktnaOseba>
-					<ImeOsebe>Monika Baksa</ImeOsebe>
-				</KontaktnaOseba>
-				<Komunikacije>
-					<StevilkaKomunikacije>38616204500</StevilkaKomunikacije>
-					<VrstaKomunikacije>TE</VrstaKomunikacije>
-				</Komunikacije>
-				<Komunikacije>
-					<StevilkaKomunikacije>38616204555</StevilkaKomunikacije>
-					<VrstaKomunikacije>FX</VrstaKomunikacije>
-				</Komunikacije>
-			</KontaktiPodjetja>
-		</PodatkiPodjetja>
-		<!-- naročnik -->
-		<PodatkiPodjetja>
-			<NazivNaslovPodjetja>
-				<VrstaPartnerja>BY</VrstaPartnerja>
-				<NazivPartnerja>
-					<NazivPartnerja1>Univerza v Ljubljani, </NazivPartnerja1>
-					<NazivPartnerja2>Fakulteta za računalništvo in informatiko</NazivPartnerja2>
-					<NazivPartnerja3>Laboratorij za </NazivPartnerja3>
-					<NazivPartnerja4>podatkovne tehnologije</NazivPartnerja4>
-				</NazivPartnerja>
-				<Ulica>
-					<Ulica1>Večna pot </Ulica1>
-					<Ulica2>113</Ulica2>
-					<Ulica3>nadstropje 2, kabinet R2.49</Ulica3>
-				</Ulica>
-				<Kraj>Ljubljana</Kraj>
-				<NazivDrzave>Slovenija</NazivDrzave>
-				<PostnaStevilka>1000</PostnaStevilka>
-				<KodaDrzave>SI</KodaDrzave>
-			</NazivNaslovPodjetja>
-			<FinancniPodatkiPodjetja>
-				<BancniRacun>
-					<StevilkaBancnegaRacuna>SI56020120090111333</StevilkaBancnegaRacuna>
-					<NazivBanke1>Moja banka d.d.</NazivBanke1>
-					<NazivBanke2>Podružnica center</NazivBanke2>
-					<BIC>LJBASI2XXXX</BIC>
-				</BancniRacun>
-			</FinancniPodatkiPodjetja>
-			<ReferencniPodatkiPodjetja>
-				<VrstaPodatkaPodjetja>VA</VrstaPodatkaPodjetja>
-				<PodatekPodjetja>SI67909027</PodatekPodjetja>
-			</ReferencniPodatkiPodjetja>
-			<ReferencniPodatkiPodjetja>
-				<VrstaPodatkaPodjetja>GN</VrstaPodatkaPodjetja>
-				<PodatekPodjetja>1627023</PodatekPodjetja>
-			</ReferencniPodatkiPodjetja>
-			<ReferencniPodatkiPodjetja>
-				<VrstaPodatkaPodjetja>IT</VrstaPodatkaPodjetja>
-				<PodatekPodjetja>444-55</PodatekPodjetja>
-			</ReferencniPodatkiPodjetja>
-			<KontaktiPodjetja>
-				<KontaktnaOseba>
-					<ImeOsebe>Dejan Lavbič</ImeOsebe>
-				</KontaktnaOseba>
-				<Komunikacije>
-					<StevilkaKomunikacije>38614798000</StevilkaKomunikacije>
-					<VrstaKomunikacije>TE</VrstaKomunikacije>
-				</Komunikacije>
-				<Komunikacije>
-					<StevilkaKomunikacije>38612419350</StevilkaKomunikacije>
-					<VrstaKomunikacije>FX</VrstaKomunikacije>
-				</Komunikacije>
-			</KontaktiPodjetja>
-		</PodatkiPodjetja>
-		<!-- prejemnik -->
-		<PodatkiPodjetja>
-			<NazivNaslovPodjetja>
-				<VrstaPartnerja>IV</VrstaPartnerja>
-				<NazivPartnerja>
-					<NazivPartnerja1>Prejemnik d.d.</NazivPartnerja1>
-				</NazivPartnerja>
-				<Ulica>
-					<Ulica1>Mali dol 13</Ulica1>
-				</Ulica>
-				<Kraj>Maribor</Kraj>
-				<NazivDrzave>Slovenija</NazivDrzave>
-				<PostnaStevilka>2000</PostnaStevilka>
-				<KodaDrzave>SI</KodaDrzave>
-			</NazivNaslovPodjetja>
-			<FinancniPodatkiPodjetja>
-				<BancniRacun>
-					<StevilkaBancnegaRacuna>SI56251009727460276</StevilkaBancnegaRacuna>
-					<NazivBanke1>PROBANKA</NazivBanke1>
-					<BIC>PROBSI2XXXX</BIC>
-				</BancniRacun>
-			</FinancniPodatkiPodjetja>
-			<ReferencniPodatkiPodjetja>
-				<VrstaPodatkaPodjetja>VA</VrstaPodatkaPodjetja>
-				<PodatekPodjetja>SI22222222</PodatekPodjetja>
-			</ReferencniPodatkiPodjetja>
-			<ReferencniPodatkiPodjetja>
-				<VrstaPodatkaPodjetja>GN</VrstaPodatkaPodjetja>
-				<PodatekPodjetja>1111111</PodatekPodjetja>
-			</ReferencniPodatkiPodjetja>
-			<KontaktiPodjetja>
-				<KontaktnaOseba>
-					<ImeOsebe>Janez Novak</ImeOsebe>
-				</KontaktnaOseba>
-				<Komunikacije>
-					<StevilkaKomunikacije>38616664500</StevilkaKomunikacije>
-					<VrstaKomunikacije>TE</VrstaKomunikacije>
-				</Komunikacije>
-				<Komunikacije>
-					<StevilkaKomunikacije>38616664500</StevilkaKomunikacije>
-					<VrstaKomunikacije>FX</VrstaKomunikacije>
-				</Komunikacije>
-			</KontaktiPodjetja>
-		</PodatkiPodjetja>
-		<!--referenčni dokumenti -->
-		<ReferencniDokumenti VrstaDokumenta="ON">
-			<StevilkaDokumenta>NAR-2016-512</StevilkaDokumenta>
-			<DatumDokumenta>2016-02-25T00:00:00Z</DatumDokumenta>
-		</ReferencniDokumenti>
-		<ReferencniDokumenti VrstaDokumenta="CT">
-			<StevilkaDokumenta>POG-2016-12</StevilkaDokumenta>
-			<DatumDokumenta>2016-01-05T00:00:00Z</DatumDokumenta>
-		</ReferencniDokumenti>
-		<ReferencniDokumenti VrstaDokumenta="AAK">
-			<StevilkaDokumenta>DOB-2016-12</StevilkaDokumenta>
-			<DatumDokumenta>2016-03-06T00:00:00Z</DatumDokumenta>
-		</ReferencniDokumenti>
-		<!-- postavke računa -->
-		<PostavkeRacuna>
-			<Postavka/>
-			<OpisiArtiklov>
-				<KodaOpisaArtikla>F</KodaOpisaArtikla>
-				<OpisArtikla>
-					<OpisArtikla1>Pesmi v elektronski obliki</OpisArtikla1>
-				</OpisArtikla>
-			</OpisiArtiklov>
-			<OpisiArtiklov>
-				<OpisArtikla>
-					<OpisArtikla1>OZNAKA_POSTAVKE</OpisArtikla1>
-					<OpisArtikla2>opisna</OpisArtikla2>
-				</OpisArtikla>
-			</OpisiArtiklov>
-			<KolicinaArtikla>
-				<VrstaKolicine>47</VrstaKolicine>
-				<Kolicina>0</Kolicina>
-				<EnotaMere>PCE</EnotaMere>
-			</KolicinaArtikla>
-			<ZneskiPostavke>
-				<VrstaZneskaPostavke>38</VrstaZneskaPostavke>
-				<ZnesekPostavke>0</ZnesekPostavke>
-			</ZneskiPostavke>
-			<CenaPostavke>
-				<Cena>0</Cena>
-			</CenaPostavke>
-			<DavkiPostavke>
-				<ZneskiDavkovPostavke>
-					<VrstaZneskaDavkaPostavke>124</VrstaZneskaDavkaPostavke>
-				</ZneskiDavkovPostavke>
-			</DavkiPostavke>
-			<!-- Stroskovno mesto postavke -->
-			<StroskovnoMesto>123456</StroskovnoMesto>
-			<!-- Datum ali obdobje dobave na postavki -->
-			<ObdobjeDobave>22.1.-10.6.2016</ObdobjeDobave>
-		</PostavkeRacuna>
-		<%
-			 var zanri = {}; var pesmi = 0;
-			 for (var i=0; i < postavkeRacuna.length; i++) {
-          if (postavkeRacuna[i].zanr in zanri)
-            zanri[postavkeRacuna[i].zanr]++;
-          else
-            zanri[postavkeRacuna[i].zanr] = 1;
-          if (postavkeRacuna[i].opisArtikla.endsWith("(Iron Maiden)") ||
-            postavkeRacuna[i].opisArtikla.endsWith("(Body Count)"))
-            pesmi++;
-			 }
-       
-       var skupniPopust = (postavkeRacuna.length >= 5? 20: 0) +
-          (pesmi > 1? 5: 0) + (new Date().getMinutes() <= 30? 1: 0);
-       for (var zanr in zanri)
-          if (zanri[zanr] >= 3) {
-            skupniPopust += 10;
-            break;
-          }
-          
-			 var vsotaSPopustiInDavki = 0, vsotaZneskovDdv = 0, vsotaOsnovZaDdv = 0,
-			 		 vsotaVrednosti = 0, vsotaPopustov = 0;
-       var vsoteOsnovZaDdv = { "0": 0, "9.5": 0, "22": 0};
-       var vsoteZneskovDdv = { "0": 0, "9.5": 0, "22": 0};
-			 for (var i=0; i < postavkeRacuna.length; i++) {
-			   vrednost = postavkeRacuna[i].kolicina * postavkeRacuna[i].cena;
-				 davcnaStopnja = postavkeRacuna[i].stopnja;
-				 popustStopnja = postavkeRacuna[i].popust + skupniPopust;
-				 popust = postavkeRacuna[i].kolicina * postavkeRacuna[i].cena * (popustStopnja/100);
-				 osnovaZaDdv = vrednost - popust;
-				 ddv = osnovaZaDdv * (davcnaStopnja/100);
-         
-         vsoteOsnovZaDdv["" + davcnaStopnja] += osnovaZaDdv;
-         vsoteZneskovDdv["" + davcnaStopnja] += ddv;
-				 vsotaSPopustiInDavki += (osnovaZaDdv + ddv);
-				 vsotaZneskovDdv += ddv;
-				 vsotaOsnovZaDdv += osnovaZaDdv;
-				 vsotaVrednosti += vrednost;
-				 vsotaPopustov += popust;
-		%>
+<% } %>
+<IzdaniRacunEnostavni xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xds="http://uri.etsi.org/01903/v1.1.1#"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      xsi:noNamespaceSchemaLocation="http://www.gzs.si/e-poslovanje/sheme/eSLOG_1-6_EnostavniRacun.xsd">
+    <Racun Id="data">
+        <!-- verzija priročnika -->
+        <PoljubnoBesedilo>
+            <VrstaBesedila>AAI</VrstaBesedila>
+            <Besedilo>
+                <Tekst1>PRIROCNIK_ESLOG_1_6</Tekst1>
+            </Besedilo>
+        </PoljubnoBesedilo>
+        <!-- številka računa -->
+        <GlavaRacuna>
+            <VrstaRacuna>380</VrstaRacuna>
+            <StevilkaRacuna>RAC-12345-6789-XX</StevilkaRacuna>
+            <FunkcijaRacuna>9</FunkcijaRacuna>
+            <!-- 1 - Racuna ni potrebno placati. -->
+            <NacinPlacila>1</NacinPlacila>
+            <!-- Stroskovno mesto računa -->
+            <StroskovnoMesto>123456</StroskovnoMesto>
+            <!-- OTHR - drugo -->
+            <KodaNamena>OTHR</KodaNamena>
+        </GlavaRacuna>
+        <!-- naslov računa -->
+        <PoljubnoBesedilo>
+            <VrstaBesedila>AAI</VrstaBesedila>
+            <Besedilo>
+                <Tekst1>NASLOV_RACUNA</Tekst1>
+                <Tekst2>Račun za opravljene storitve april 2016</Tekst2>
+            </Besedilo>
+        </PoljubnoBesedilo>
+        <!-- datum izdaje računa -->
+        <DatumiRacuna>
+            <VrstaDatuma>137</VrstaDatuma>
+            <DatumRacuna>2016-04-13T00:00:00.0Z</DatumRacuna>
+        </DatumiRacuna>
+        <!-- valuta računa -->
+        <Valuta>
+            <VrstaValuteRacuna>2</VrstaValuteRacuna>
+            <KodaValute>EUR</KodaValute>
+        </Valuta>
+        <!-- kraj izdaje računa -->
+        <Lokacije>
+            <VrstaLokacije>91</VrstaLokacije>
+            <NazivLokacije>Ljubljana</NazivLokacije>
+        </Lokacije>
+        <!-- rok plačila -->
+        <PlacilniPogoji>
+            <PodatkiORokih>
+                <VrstaPogoja>3</VrstaPogoja>
+            </PodatkiORokih>
+            <PlacilniRoki>
+                <VrstaDatumaPlacilnegaRoka>13</VrstaDatumaPlacilnegaRoka>
+                <Datum>2016-04-18T00:00:00.0Z</Datum>
+            </PlacilniRoki>
+        </PlacilniPogoji>
+        <!-- tekst glava -->
+        <PoljubnoBesedilo>
+            <VrstaBesedila>AAI</VrstaBesedila>
+            <Besedilo>
+                <Tekst1>GLAVA_TEKST</Tekst1>
+                <Tekst2>Poljubno besedilo, v katerem se opiše karkoli je za izdajatelja ali na</Tekst2>
+                <Tekst3>ročnika, prejemnika pomembno.</Tekst3>
+            </Besedilo>
+        </PoljubnoBesedilo>
+        <!-- obdobje od -->
+        <DatumiRacuna>
+            <VrstaDatuma>263</VrstaDatuma>
+            <DatumRacuna>2016-01-01T00:00:00.0Z</DatumRacuna>
+        </DatumiRacuna>
+        <!-- obdobje do -->
+        <DatumiRacuna>
+            <VrstaDatuma>263</VrstaDatuma>
+            <DatumRacuna>2016-04-30T00:00:00.0Z</DatumRacuna>
+        </DatumiRacuna>
+        <!-- datum storitve -->
+        <DatumiRacuna>
+            <VrstaDatuma>35</VrstaDatuma>
+            <DatumRacuna>2016-04-13T00:00:00.0Z</DatumRacuna>
+        </DatumiRacuna>
+        <!-- opis obdobja -->
+        <PoljubnoBesedilo>
+            <VrstaBesedila>AAI</VrstaBesedila>
+            <Besedilo>
+                <Tekst1>OPIS_OBDOBJA</Tekst1>
+                <Tekst2>Prvo četrtletje</Tekst2>
+            </Besedilo>
+        </PoljubnoBesedilo>
+        <!-- Subjekti na postavki -->
+        <PoljubnoBesedilo>
+            <VrstaBesedila>ZZZ</VrstaBesedila>
+            <Besedilo>
+                <Tekst1>3357287</Tekst1>
+                <Tekst2>IME</Tekst2>
+                <Tekst3>BIROKOP D.O.O.</Tekst3>
+            </Besedilo>
+        </PoljubnoBesedilo>
+        <PoljubnoBesedilo>
+            <VrstaBesedila>ZZZ</VrstaBesedila>
+            <Besedilo>
+                <Tekst1>3357287</Tekst1>
+                <Tekst2>NASLOV</Tekst2>
+                <Tekst3>ULICA 15. MAJA 5</Tekst3>
+            </Besedilo>
+        </PoljubnoBesedilo>
+        <PoljubnoBesedilo>
+            <VrstaBesedila>ZZZ</VrstaBesedila>
+            <Besedilo>
+                <Tekst1>3357287</Tekst1>
+                <Tekst2>KRAJ</Tekst2>
+                <Tekst3>KOPER-CAPODISTRIA</Tekst3>
+                <Tekst4>6000</Tekst4>
+                <Tekst5>SLOVENIJA</Tekst5>
+            </Besedilo>
+        </PoljubnoBesedilo>
+        <!-- Namen pri sklicu-->
+        <PoljubnoBesedilo>
+            <VrstaBesedila>AAI</VrstaBesedila>
+            <Besedilo>
+                <Tekst1>REFERENCA_NAMEN</Tekst1>
+                <Tekst2>01</Tekst2>
+            </Besedilo>
+        </PoljubnoBesedilo>
+        <!-- izdajatelj -->
+        <PodatkiPodjetja>
+            <NazivNaslovPodjetja>
+                <VrstaPartnerja>II</VrstaPartnerja>
+                <NazivPartnerja>
+                    <NazivPartnerja1>SETCCE</NazivPartnerja1>
+                </NazivPartnerja>
+                <Ulica>
+                    <Ulica1>Tehnološki park 21</Ulica1>
+                    <Ulica3>Objekt D, nadstropje 4</Ulica3>
+                </Ulica>
+                <Kraj>Ljubljana</Kraj>
+                <NazivDrzave>Slovenija</NazivDrzave>
+                <PostnaStevilka>1000</PostnaStevilka>
+                <KodaDrzave>SI</KodaDrzave>
+            </NazivNaslovPodjetja>
+            <FinancniPodatkiPodjetja>
+                <BancniRacun>
+                    <StevilkaBancnegaRacuna>SI56051008013037180</StevilkaBancnegaRacuna>
+                    <NazivBanke1>ABANKA</NazivBanke1>
+                    <BIC>ABANSI2XXXX</BIC>
+                </BancniRacun>
+            </FinancniPodatkiPodjetja>
+            <ReferencniPodatkiPodjetja>
+                <VrstaPodatkaPodjetja>VA</VrstaPodatkaPodjetja>
+                <PodatekPodjetja>SI39705684</PodatekPodjetja>
+            </ReferencniPodatkiPodjetja>
+            <ReferencniPodatkiPodjetja>
+                <VrstaPodatkaPodjetja>GN</VrstaPodatkaPodjetja>
+                <PodatekPodjetja>1594389</PodatekPodjetja>
+            </ReferencniPodatkiPodjetja>
+            <KontaktiPodjetja>
+                <KontaktnaOseba>
+                    <ImeOsebe>Monika Baksa</ImeOsebe>
+                </KontaktnaOseba>
+                <Komunikacije>
+                    <StevilkaKomunikacije>38616204500</StevilkaKomunikacije>
+                    <VrstaKomunikacije>TE</VrstaKomunikacije>
+                </Komunikacije>
+                <Komunikacije>
+                    <StevilkaKomunikacije>38616204555</StevilkaKomunikacije>
+                    <VrstaKomunikacije>FX</VrstaKomunikacije>
+                </Komunikacije>
+            </KontaktiPodjetja>
+        </PodatkiPodjetja>
+        <!-- naročnik -->
+        <PodatkiPodjetja>
+            <NazivNaslovPodjetja>
+                <VrstaPartnerja>BY</VrstaPartnerja>
+                <NazivPartnerja>
+                    <NazivPartnerja1><%= stranka.FirstName %> <%= stranka.LastName %></NazivPartnerja1>
+                    <NazivPartnerja2><%= stranka.Company %></NazivPartnerja2>
+                </NazivPartnerja>
+                <Ulica>
+                    <Ulica1><%= stranka.Address %></Ulica1>
+                </Ulica>
+                <Kraj><%= stranka.City %></Kraj>
+                <NazivDrzave><%= stranka.Country %></NazivDrzave>
+                <PostnaStevilka><%= stranka.PostalCode %></PostnaStevilka>
+            </NazivNaslovPodjetja>
+            <FinancniPodatkiPodjetja>
+                <BancniRacun>
+                    <StevilkaBancnegaRacuna></StevilkaBancnegaRacuna>
+                    <NazivBanke1></NazivBanke1>
+                    <NazivBanke2></NazivBanke2>
+                    <BIC></BIC>
+                </BancniRacun>
+            </FinancniPodatkiPodjetja>
+            <ReferencniPodatkiPodjetja>
+                <VrstaPodatkaPodjetja>VA</VrstaPodatkaPodjetja>
+                <PodatekPodjetja></PodatekPodjetja>
+            </ReferencniPodatkiPodjetja>
+            <ReferencniPodatkiPodjetja>
+                <VrstaPodatkaPodjetja>GN</VrstaPodatkaPodjetja>
+                <PodatekPodjetja></PodatekPodjetja>
+            </ReferencniPodatkiPodjetja>
+            <ReferencniPodatkiPodjetja>
+                <VrstaPodatkaPodjetja>IT</VrstaPodatkaPodjetja>
+                <PodatekPodjetja></PodatekPodjetja>
+            </ReferencniPodatkiPodjetja>
+            <KontaktiPodjetja>
+                <KontaktnaOseba>
+                    <ImeOsebe><%= stranka.FirstName %> <%= stranka.LastName%> (<%= stranka.Email%>)</ImeOsebe>
+                </KontaktnaOseba>
+                <Komunikacije>
+                    <StevilkaKomunikacije><%= stranka.Phone %></StevilkaKomunikacije>
+                    <VrstaKomunikacije>TE</VrstaKomunikacije>
+                </Komunikacije>
+                <Komunikacije>
+                    <StevilkaKomunikacije><%= stranka.Fax %></StevilkaKomunikacije>
+                    <VrstaKomunikacije>FX</VrstaKomunikacije>
+                </Komunikacije>
+            </KontaktiPodjetja>
+        </PodatkiPodjetja>
+        <!-- prejemnik -->
+        <PodatkiPodjetja>
+            <NazivNaslovPodjetja>
+                <VrstaPartnerja>IV</VrstaPartnerja>
+                <NazivPartnerja>
+                    <NazivPartnerja1>Prejemnik d.d.</NazivPartnerja1>
+                </NazivPartnerja>
+                <Ulica>
+                    <Ulica1>Mali dol 13</Ulica1>
+                </Ulica>
+                <Kraj>Maribor</Kraj>
+                <NazivDrzave>Slovenija</NazivDrzave>
+                <PostnaStevilka>2000</PostnaStevilka>
+                <KodaDrzave>SI</KodaDrzave>
+            </NazivNaslovPodjetja>
+            <FinancniPodatkiPodjetja>
+                <BancniRacun>
+                    <StevilkaBancnegaRacuna>SI56251009727460276</StevilkaBancnegaRacuna>
+                    <NazivBanke1>PROBANKA</NazivBanke1>
+                    <BIC>PROBSI2XXXX</BIC>
+                </BancniRacun>
+            </FinancniPodatkiPodjetja>
+            <ReferencniPodatkiPodjetja>
+                <VrstaPodatkaPodjetja>VA</VrstaPodatkaPodjetja>
+                <PodatekPodjetja>SI22222222</PodatekPodjetja>
+            </ReferencniPodatkiPodjetja>
+            <ReferencniPodatkiPodjetja>
+                <VrstaPodatkaPodjetja>GN</VrstaPodatkaPodjetja>
+                <PodatekPodjetja>1111111</PodatekPodjetja>
+            </ReferencniPodatkiPodjetja>
+            <KontaktiPodjetja>
+                <KontaktnaOseba>
+                    <ImeOsebe>Janez Novak</ImeOsebe>
+                </KontaktnaOseba>
+                <Komunikacije>
+                    <StevilkaKomunikacije>38616664500</StevilkaKomunikacije>
+                    <VrstaKomunikacije>TE</VrstaKomunikacije>
+                </Komunikacije>
+                <Komunikacije>
+                    <StevilkaKomunikacije>38616664500</StevilkaKomunikacije>
+                    <VrstaKomunikacije>FX</VrstaKomunikacije>
+                </Komunikacije>
+            </KontaktiPodjetja>
+        </PodatkiPodjetja>
+        <!--referenčni dokumenti -->
+        <ReferencniDokumenti VrstaDokumenta="ON">
+            <StevilkaDokumenta>NAR-2016-512</StevilkaDokumenta>
+            <DatumDokumenta>2016-02-25T00:00:00Z</DatumDokumenta>
+        </ReferencniDokumenti>
+        <ReferencniDokumenti VrstaDokumenta="CT">
+            <StevilkaDokumenta>POG-2016-12</StevilkaDokumenta>
+            <DatumDokumenta>2016-01-05T00:00:00Z</DatumDokumenta>
+        </ReferencniDokumenti>
+        <ReferencniDokumenti VrstaDokumenta="AAK">
+            <StevilkaDokumenta>DOB-2016-12</StevilkaDokumenta>
+            <DatumDokumenta>2016-03-06T00:00:00Z</DatumDokumenta>
+        </ReferencniDokumenti>
+        <!-- postavke računa -->
+        <PostavkeRacuna>
+            <Postavka/>
+            <OpisiArtiklov>
+                <KodaOpisaArtikla>F</KodaOpisaArtikla>
+                <OpisArtikla>
+                    <OpisArtikla1>Pesmi v elektronski obliki</OpisArtikla1>
+                </OpisArtikla>
+            </OpisiArtiklov>
+            <OpisiArtiklov>
+                <OpisArtikla>
+                    <OpisArtikla1>OZNAKA_POSTAVKE</OpisArtikla1>
+                    <OpisArtikla2>opisna</OpisArtikla2>
+                </OpisArtikla>
+            </OpisiArtiklov>
+            <KolicinaArtikla>
+                <VrstaKolicine>47</VrstaKolicine>
+                <Kolicina>0</Kolicina>
+                <EnotaMere>PCE</EnotaMere>
+            </KolicinaArtikla>
+            <ZneskiPostavke>
+                <VrstaZneskaPostavke>38</VrstaZneskaPostavke>
+                <ZnesekPostavke>0</ZnesekPostavke>
+            </ZneskiPostavke>
+            <CenaPostavke>
+                <Cena>0</Cena>
+            </CenaPostavke>
+            <DavkiPostavke>
+                <ZneskiDavkovPostavke>
+                    <VrstaZneskaDavkaPostavke>124</VrstaZneskaDavkaPostavke>
+                </ZneskiDavkovPostavke>
+            </DavkiPostavke>
+            <!-- Stroskovno mesto postavke -->
+            <StroskovnoMesto>123456</StroskovnoMesto>
+            <!-- Datum ali obdobje dobave na postavki -->
+            <ObdobjeDobave>22.1.-10.6.2016</ObdobjeDobave>
+        </PostavkeRacuna>
+        <%
+        var zanri = {}; var pesmi = 0;
+        for (var i = 0; i < postavkeRacuna.length; i++) {
+            if (postavkeRacuna[i].zanr in zanri)
+                zanri[postavkeRacuna[i].zanr]++;
+            else
+                zanri[postavkeRacuna[i].zanr] = 1;
+            if (postavkeRacuna[i].opisArtikla.endsWith("(Iron Maiden)") ||
+                    postavkeRacuna[i].opisArtikla.endsWith("(Body Count)"))
+                pesmi++;
+        }
+
+        var skupniPopust = (postavkeRacuna.length >= 5 ? 20 : 0) +
+                (pesmi > 1 ? 5 : 0) + (new Date().getMinutes() <= 30 ? 1 : 0);
+        for (var zanr in zanri)
+            if (zanri[zanr] >= 3) {
+                skupniPopust += 10;
+                break;
+            }
+
+        var vsotaSPopustiInDavki = 0, vsotaZneskovDdv = 0, vsotaOsnovZaDdv = 0,
+        vsotaVrednosti = 0, vsotaPopustov = 0;
+        var vsoteOsnovZaDdv = { "0": 0, "9.5": 0, "22": 0 };
+        var vsoteZneskovDdv = { "0": 0, "9.5": 0, "22": 0 };
+        for (var i = 0; i < postavkeRacuna.length; i++) {
+            vrednost = postavkeRacuna[i].kolicina * postavkeRacuna[i].cena;
+            davcnaStopnja = postavkeRacuna[i].stopnja;
+            popustStopnja = postavkeRacuna[i].popust + skupniPopust;
+            popust = postavkeRacuna[i].kolicina * postavkeRacuna[i].cena * (popustStopnja / 100);
+            osnovaZaDdv = vrednost - popust;
+            ddv = osnovaZaDdv * (davcnaStopnja / 100);
+
+            vsoteOsnovZaDdv["" + davcnaStopnja] += osnovaZaDdv;
+            vsoteZneskovDdv["" + davcnaStopnja] += ddv;
+            vsotaSPopustiInDavki += (osnovaZaDdv + ddv);
+            vsotaZneskovDdv += ddv;
+            vsotaOsnovZaDdv += osnovaZaDdv;
+            vsotaVrednosti += vrednost;
+            vsotaPopustov += popust;
+        %>
 			<PostavkeRacuna>
 				<Postavka>
 					<StevilkaVrstice><%= (i+1) %></StevilkaVrstice>
